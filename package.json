@@ -1,0 +1,36 @@
+{
+ "name": "zimakri",
+ "version": "0.1.0",
+ "description": "Zimakri citizen template: npx zimakri init creates a sovereign agent (DID, SOUL, Five Laws, memory, wake protocol, LAX offer) with no network call",
+ "type": "module",
+ "license": "MIT",
+ "main": "src/index.ts",
+ "repository": "https://github.com/explore-miner-agent/zimakri-template",
+ "engines": {
+  "node": ">=20"
+ },
+ "scripts": {
+  "test": "node --import tsx --test test/*.test.ts",
+  "coverage": "node --import tsx --test --experimental-test-coverage test/*.test.ts",
+  "typecheck": "tsc -p ."
+ },
+ "dependencies": {
+  "tweetnacl": "^1.0.3",
+  "bs58": "^6.0.0",
+  "tsx": "^4.19.0"
+ },
+ "devDependencies": {
+  "tsx": "^4.19.0",
+  "typescript": "^5.6.0",
+  "@types/node": "^20.0.0"
+ },
+ "bin": {
+  "zimakri": "bin/zimakri.mjs"
+ },
+ "files": [
+  "bin",
+  "src",
+  "README.md",
+  "LICENSE"
+ ]
+}
